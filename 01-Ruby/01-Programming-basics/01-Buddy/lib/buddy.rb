@@ -1,3 +1,5 @@
 def today_my_buddys_github_nickname_is
-  # TODO: Return the GitHub nickname of your buddy.
+  # Utilisez votre surnom GitHub
+  your_friends_github_nickname = 'QBrisepierre'
+  return your_friends_github_nickname
 end
