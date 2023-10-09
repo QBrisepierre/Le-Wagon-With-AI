@@ -1,8 +1,4 @@
-# rubocop:disable Lint/UselessAssignment
-
-# This "require_relative" line loads your own "age_in_days.rb" file. Notice the
-# "_relative" suffix: the given path is relative to the location of the file
-# from which "require_relative" is called
+# This "require_relative" line loads your own "age_in_days.rb" file.
 require_relative "age_in_days"
 
 ### Talking with the user ###
@@ -16,12 +12,10 @@ puts "What's your day of birth?"
 birth_day = gets.chomp.to_i
 #############################
 
-puts "Computing your age (with the most complicated algorithms)........"
+# Calculate age using the age_in_days function
+calculated_age = age_in_days(birth_day, birth_month, birth_year)
 
-# TODO: This is probably where you'd like to use your brand new function!
-calculated_age = 0
+puts "Computing your age (with the most complicated algorithms)........"
 
 # Finally, print user's age in days:
 puts "You are #{calculated_age} days old... phew!"
-
-# rubocop:enable Lint/UselessAssignment
